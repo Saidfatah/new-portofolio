@@ -1,0 +1,146 @@
+
+$easeInOutBack:cubic-bezier(0.68, -0.6, 0.32, 1.6);
+$easeInOutQuart:cubic-bezier(0.76, 0, 0.24, 1);
+$easeOutBack:cubic-bezier(0.34, 1.56, 0.64, 1);
+$easeInOutCirc:cubic-bezier(0.85, 0, 0.15, 1);
+
+span{
+    font-family: apercu_regular_pro,Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+@keyframes slideUp {
+    0%{
+        transform: translate3d(0px,100%,0px);
+    }
+    100%{
+        transform: translate3d(0px,0%,0px);
+    }
+}
+
+@keyframes Slide_up_then_further_up {
+    0%{
+        transform: translate3d(0px,100%,0px);
+    }
+    50%{
+        transform: translate3d(0px,0%,0px);
+    }
+    100%{
+        transform: translate3d(0px,-100%,0px);
+    }
+}
+
+@keyframes subtleRotation {
+    0%{
+         transform: rotate3d(1, 1, 1, 20deg);;
+    }
+    100%{
+        transform: rotate3d(1, 1, 1, 0deg);;
+    }
+}
+
+
+
+
+.slide_word{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 1.5s $easeInOutCirc forwards;
+}
+
+.slide_word_delay_duration_half_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s $easeInOutQuart forwards;
+}
+.slide_word_delay_1_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 1s $easeInOutQuart forwards;
+}
+.slide_word_delay_2_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 2s $easeInOutQuart forwards;
+}
+.slide_word_delay_2_half_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 2.5s $easeInOutQuart forwards;
+}
+.slide_word_delay_3_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 3s $easeInOutQuart forwards;
+}
+.slide_word_delay_3_half_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 3.5s $easeInOutQuart forwards;
+}
+.slide_word_delay_4_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 4s $easeInOutQuart forwards;
+}
+.slide_word_delay_4_half_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 4.5s $easeInOutQuart forwards;
+}
+.slide_word_delay_5_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 5s $easeInOutQuart forwards;
+}
+.slide_word_delay_5_half_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 5.5s $easeInOutQuart forwards;
+}
+.slide_word_delay_6_second{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 0.5s 6s $easeInOutQuart forwards;
+}
+
+
+
+.slide_word_up_then_further_up{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: Slide_up_then_further_up 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+}
+.slide_word_1_half_delay{
+    display: inline-block;
+    transform: translate3d(0px,100%,0px);
+    animation: slideUp 1s 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+
+
+
+
+
+
+
+.flex_wrapper{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    width: fit-content;
+}
+
+.rotateLineOut{
+    // animation: subtleRotation 1s $easeInOutCirc forwards;
+}
+
+.line_wrapper_Overflow{
+     line-height: 1em;
+     font-size: 24px;
+     will-change: transform;
+       overflow: hidden;
+}

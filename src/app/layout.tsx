@@ -1,8 +1,45 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localeFont from 'next/font/local'
 import "../styles/global.scss";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const apercu = localeFont({
+  src: [
+    {
+      path: "../../public/fonts/apercu_bold_pro.otf",
+      weight: "700",
+    },
+    {
+      path: "../../public/fonts/apercu_medium_pro.otf",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/apercu_regular_pro.otf",
+      weight: "500",
+    },
+  ],
+  variable:"--font-apercu"
+})
+
+export const aeonik = localeFont({
+  src: [
+    {
+      path: "../../public/fonts/AeonikTRIAL-Bold.otf",
+      weight: "700",
+    },
+    {
+      path: "../../public/fonts/AeonikTRIAL-Light.otf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/AeonikTRIAL-Regular.otf",
+      weight: "500",
+    },
+  ],
+  variable:"--font-apercu"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={apercu.className}>{children}</body>
     </html>
   );
 }
