@@ -20,7 +20,7 @@ export const apercu = localeFont({
       weight: "500",
     },
   ],
-  variable:"--font-apercu"
+  variable: "--font-apercu"
 })
 
 export const aeonik = localeFont({
@@ -38,7 +38,28 @@ export const aeonik = localeFont({
       weight: "500",
     },
   ],
-  variable:"--font-apercu"
+  variable: "--font-apercu"
+})
+export const PPNeueMontreal = localeFont({
+  src: [
+    {
+      path: "../../public/fonts/NeueMontreal-Bold.otf",
+      weight: "700",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Medium.otf",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Regular.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Light.otf",
+      weight: "300",
+    },
+  ],
+  variable: "--font-apercu"
 })
 
 export const metadata: Metadata = {
@@ -53,7 +74,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={apercu.className}>{children}</body>
+      <body className={PPNeueMontreal.className}>{children}</body>
     </html>
   );
 }
