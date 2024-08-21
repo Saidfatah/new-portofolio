@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import DescriptionText from "./TextAnimations/DescriptionText";
 import RandomBinaryChar from "./TextAnimations/RandomBinaryChar";
 import SubTitle from "./TextAnimations/SubTitle";
 
@@ -16,35 +17,57 @@ function SaidFatah_intro_3d_box() {
 
     }, []);
 
-    return (<div className="cube-container apercuFontRegular">
-        <div className="cube rotate_cube_sequence_1 apercuFontRegular" ref={cubeRef as any} >
+    return (<div className="cube-container">
+        <div className="cube" ref={cubeRef as any} >
             <div className="face front ">
-                <SubTitle>
+                <DescriptionText>
                     <RandomBinaryChar text="SAID" />
-                </SubTitle>
-                <SubTitle>
+                </DescriptionText>
+                <DescriptionText>
                     <RandomBinaryChar text="FATAH" />
-                </SubTitle>
+                </DescriptionText>
                 {/* <RandomBinaryChar text="SAID" /> */}
             </div>
             <div className="face right">
-                <RandomBinaryChar text="FRONTEND" />
-                <RandomBinaryChar text="ENGINEER" />
+                <DescriptionText>
+                    <RandomBinaryChar text="FRONTEND" />
+                </DescriptionText>
+
+                <DescriptionText>
+                    <RandomBinaryChar text="ENGINEER" />
+                </DescriptionText>
             </div>
             <div className="face back">
-                <RandomBinaryChar text="ARTIST" />
-                <RandomBinaryChar text="CREATIVE" />
+                <DescriptionText>
+                    <RandomBinaryChar text="ARTIST" />
+                </DescriptionText>
+
+                <DescriptionText>
+                    <RandomBinaryChar text="CREATIVE" />
+                </DescriptionText>
             </div>
             <div className="face left">
-                <RandomBinaryChar text="Ts" />
-                <RandomBinaryChar text="Js" />
-                <RandomBinaryChar text="CSS" />
+                <DescriptionText>
+                    <RandomBinaryChar text="Ts" />
+                </DescriptionText>
+
+                <DescriptionText>
+                    <RandomBinaryChar text="Js" />
+                </DescriptionText>
+
+                <DescriptionText>
+                    <RandomBinaryChar text="CSS" />
+                </DescriptionText>
             </div>
             <div className="face bottom" >
-                <RandomBinaryChar text="ENGINEER" />
+                <DescriptionText>
+                    <RandomBinaryChar text="ENGINEER" />
+                </DescriptionText>
             </div>
             <div className="face top" >
-                <RandomBinaryChar text="ARTIST" />
+                <DescriptionText>
+                    <RandomBinaryChar text="ARTIST" />
+                </DescriptionText>
             </div>
         </div>
     </div>
